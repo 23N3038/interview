@@ -1,25 +1,36 @@
-.dummy-container {
-    height: 100vh;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* ページ全体の高さを指定 */
+    display: flex; /* Flexboxを使用 */
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+}
+img {
+    max-width: 90%; /* 画面の幅の80%を超えないように制限 */
+    max-height: 90%; /* 画面の高さの80%を超えないように制限 */
+    height: auto; /* 縦横比を維持 */
+    width: auto; /* 縦横比を維持 */
+    position: center;
     }
-    .container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-container {
+        background-color: #ffcccb; /* コンテナの背景色 */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* コンテナの影 */
+        max-width: 80%;
+        text-align: center;
     }
-    .static-image,
-    .animated-gif {
-    width: 60%;
     
-    height: auto;
-    position: absolute;
+   
+.custom-font {
+        font-family: 'Courier New', Courier, monospace; /* 特定のフォントを適用 */
+        font-size: 20px; /* フォントサイズを調整 */
+        color: #333; /* テキストの色 */
     }
-    .animated-gif {
-    opacity: 0;
-    }
-    @media screen and (max-width: 480px) {
-    .static-image,
-    .animated-gif {
-    width: 96%;
-    }
+@media screen and (max-width: 480px) {
+        .static-image,
+        .animated-gif {
+        width: 96%;
+        }
     }
