@@ -13,21 +13,7 @@ img {
     width: auto; /* 縦横比を維持 */
     position: center;
     }
-.text-container {
-        background-color: #ffcccb; /* コンテナの背景色 */
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* コンテナの影 */
-        max-width: 80%;
-        text-align: center;
-    }
-    
-   
-.custom-font {
-        font-family: 'Courier New', Courier, monospace; /* 特定のフォントを適用 */
-        font-size: 20px; /* フォントサイズを調整 */
-        color: #333; /* テキストの色 */
-    }
+
 @media screen and (max-width: 480px) {
         .static-image,
         .animated-gif {
