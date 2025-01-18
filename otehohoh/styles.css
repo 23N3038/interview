@@ -1,0 +1,84 @@
+/* ベーススタイル */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* 背景色 */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* チャットコンテナ */
+.chat-container {
+  width: 100%;
+  max-width: 600px; /* 最大幅 */
+  margin: 20px;
+  padding: 10px;
+  background-color: white; /* チャット背景色 */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+/* メッセージ共通スタイル */
+.chat-message {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* 左側（相手） */
+.chat-message.left {
+  justify-content: flex-start;
+}
+
+.chat-message.left .message-bubble {
+  background-color: #e0e0e0; /* 左側の背景色 */
+  color: black;
+  border-radius: 15px 15px 15px 0; /* 角丸調整 */
+  padding: 10px 15px;
+  max-width: 70%;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 右側（自分） */
+.chat-message.right {
+  justify-content: flex-end;
+}
+
+.chat-message.right .message-bubble {
+  background-color: #4caf50; /* 右側の背景色 */
+  color: white;
+  border-radius: 15px 15px 0 15px; /* 角丸調整 */
+  padding: 10px 15px;
+  max-width: 70%;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* スクロールバーのスタイリング */
+.chat-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 480px) {
+  .chat-container {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .chat-message .message-bubble {
+    font-size: 14px;
+  }
+}

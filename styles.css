@@ -1,39 +1,157 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%; /* ページ全体の高さを指定 */
+    height: auto;
     display: flex; /* Flexboxを使用 */
-    justify-content: center; /* 水平方向の中央揃え */
-    align-items: center; /* 垂直方向の中央揃え */
-}
-body {
-    font-family: "Zen Kaku Gothic New", serif;
-    font-size: 16px;
-    line-height: 2;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 300px;
-    width: 100%;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column; /* 縦方向に配置 */
+    justify-content: center; /* 垂直方向の中央揃え */
+    align-items: center; /* 水平方向の中央揃え */
+    justify-content: flex-start; /* 全体の開始位置を調整 */
+    font-family: "Zen Maru Gothic", serif;
+    background-color: rgba(182, 187, 213, 0.855);
     overflow-x: hidden;
 }
-.waku {
-    margin-left: auto;
-    margin-right: auto;
+
+
+header img {
+    max-width: 100%; /* 画像が親要素を超えないように調整 */
+    height: auto; /* 縦横比を維持 */
+    display: block; /* 余分な隙間を削除 */
+    margin: 0 auto; /* 画像を中央揃え */
 }
 
-img {
-    max-width: 90%; /* 画面の幅の80%を超えないように制限 */
-    max-height: 90%; /* 画面の高さの80%を超えないように制限 */
-    height: auto; /* 縦横比を維持 */
-    width: auto; /* 縦横比を維持 */
-    position: center;
-    }
+.waku {
+    max-width: 600px; /* テキストの幅を調整 */
+    text-align: center; /* 中央揃え */
+}
 
+.setsumei span {
+    display: inline-block; /* インラインブロックにする */
+    font-size: 1rem; /* テキストサイズ */
+    line-height: 1.6; /* 行間を調整 */
+    margin-top: 8rem;
+    margin-bottom: 8rem; 
+}
+.syoukai{
+    display: flex; /* 横並びにする */
+    justify-content: center; /* 水平方向に中央揃え */
+    gap: 20px; /* 画像間の隙間を調整 */
+    flex-wrap: wrap; /* 画面サイズが小さくなったら画像を折り返す */
+}
+.syoukai img {
+    margin: 30px;
+    max-width: 170%; /* 画像の幅を親要素に合わせる */
+    height: auto; /* 縦横比を維持 */ 
+    margin-bottom: 20rem;
+  }
+/* チャットコンテナ */
+.chat-container {
+    width: 100%;
+    max-width: 600px; /* 最大幅 */
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    margin-bottom: 13rem;
+  }
+  
+  /* メッセージ共通スタイル */
+  .chat-message {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  /* 左側（相手） */
+  .chat-message.left {
+    justify-content: flex-start;
+  }
+  
+  .chat-message.left .message-bubble {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 右側（自分） */
+  .chat-message.right {
+    justify-content: flex-end;
+  }
+  
+  .chat-message.right .message-bubble {
+    background-color: #e0e0e0; /* 右側の背景色 */
+    color: black;
+    border-radius: 15px 15px 0 15px; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* スクロールバーのスタイリング */
+  .chat-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .chat-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+/* .1soccer クラス全体のスタイル */
+.soccer {
+    text-align: center; /* タイトルを中央揃え */
+    padding: 20px; /* 周りにスペースを追加 */
+    background-color: #f0f0f0; /* 背景色を薄いグレーに */
+    border-radius: 10px; /* 角を丸く */
+    margin-bottom: 13rem;
+  }
+  
+  /* header 要素のスタイル */
+  .soccer header {
+    font-weight: bold; /* 太字に */
+    color: #333; /* 文字色を濃いグレーに */
+    line-height: 1.4; /* 行間を広く */
+    letter-spacing: 1px; /* 文字間隔を少し広げる */
+    text-transform: uppercase; /* 文字を大文字に変換 */
+    margin: 0; /* マージンをリセット */
+  }
+  
+  /* 見た目の効果（オプション） */
+  .soccer header:hover {
+    color: #0066cc; /* ホバー時に文字色を変更 */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 文字に影をつける */
+    transform: translateY(-5px); /* 少し上に動かして浮き上がらせる */
+    transition: all 0.3s ease; /* アニメーションをつける */
+  }
+
+  
+  
+
+
+
+/* メディアクエリ（スマホ対応） */
 @media screen and (max-width: 480px) {
-        .static-image,
-        .animated-gif {
-        width: 96%;
-        }
+    .waku {
+        width: 100%;
     }
+    header img {
+        width: 100%;
+    }
+    .syoukai {
+        flex-direction: column; /* 縦並びに変更 */
+        align-items: center; /* 中央揃え */
+    }
+    .chat-container {
+        margin: 10px;
+        padding: 10px;
+      }
+    
+ .chat-message .message-bubble {
+        font-size: 14px;
+      }
+}
