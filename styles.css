@@ -6,6 +6,23 @@ body, html {
     justify-content: center; /* 水平方向の中央揃え */
     align-items: center; /* 垂直方向の中央揃え */
 }
+body {
+    font-family: "Zen Kaku Gothic New", serif;
+    font-size: 16px;
+    line-height: 2;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 300px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+.waku {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img {
     max-width: 90%; /* 画面の幅の80%を超えないように制限 */
     max-height: 90%; /* 画面の高さの80%を超えないように制限 */
