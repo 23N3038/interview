@@ -56,6 +56,17 @@ header img {
     overflow-y: auto;
     margin-bottom: 13rem;
   }
+.chat-container2 {
+    width: 100%;
+    max-width: 600px; /* 最大幅 */
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    margin-bottom: 3rem;
+  }
   
   /* メッセージ共通スタイル */
   .chat-message {
@@ -108,7 +119,7 @@ header img {
     padding: 20px; /* 周りにスペースを追加 */
     background-color: #f0f0f0; /* 背景色を薄いグレーに */
     border-radius: 10px; /* 角を丸く */
-    margin-bottom: 13rem;
+    margin-bottom: 7rem;
   }
   
   /* header 要素のスタイル */
@@ -128,6 +139,11 @@ header img {
     transform: translateY(-5px); /* 少し上に動かして浮き上がらせる */
     transition: all 0.3s ease; /* アニメーションをつける */
   }
+  .gif-box {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
 
   
   
@@ -154,4 +170,8 @@ header img {
  .chat-message .message-bubble {
         font-size: 14px;
       }
-}
+      .gif-box img {
+        max-width: 100px; /* スマホでは最大幅を300pxに縮小 */
+        height: auto; /* 縦横比を維持 */
+      }
+    }
