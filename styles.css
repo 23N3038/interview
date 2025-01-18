@@ -11,6 +11,12 @@ body, html {
     background-color: rgba(182, 187, 213, 0.855);
     overflow-x: hidden;
 }
+.zen-maru-gothic-black {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
 
 
 header img {
@@ -65,7 +71,8 @@ header img {
     flex-direction: column;
     gap: 10px;
     overflow-y: auto;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
   }
   
   /* メッセージ共通スタイル */
@@ -140,13 +147,189 @@ header img {
     transition: all 0.3s ease; /* アニメーションをつける */
   }
   .gif-box {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; 
+}
+.bangai {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: visible; /* 子要素のはみ出しを許可 */
+    transition: all 0.3s ease; /* スムーズな変化 */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+  }
+  
+  /* 初期状態の親要素 */
+  .bangai {
+    transform: scale(1); /* 初期サイズ */
+  }
+  
+  /* アクティブ状態の親要素 */
+  .bangai.active {
+    transform: scale(1.2); /* 拡大 */
+  }
+  
+  /* 初期状態のタイトル */
+  .bangai header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    margin: 0;
+    opacity: 0.5; /* 初期は少し透明 */
+    transform: scale(1); /* 初期サイズ */
+    transition: all 0.3s ease; /* スムーズな変化 */
+  }
+  
+  /* アクティブ状態のタイトル */
+  .bangai.active header h1 {
+    opacity: 1; /* 完全に表示 */
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3),   /* 外側の薄い影 */
+    -2px -2px 3px rgba(255, 255, 255, 0.5), /* 内側の明るい影 */
+    4px 4px 8px rgba(0, 0, 0, 0.2);  /* 奥行きの強い影 */
+    color: #7e5160; /* 色を変更 */
+    font-weight:900; 
+    transform: scale(1.2); /* 少し拡大 */
+  }
+  .bangai2 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: visible; /* 子要素のはみ出しを許可 */
+    transition: all 0.3s ease; /* スムーズな変化 */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+  }
+  
+  /* 初期状態の親要素 */
+  .bangai2 {
+    transform: scale(1); /* 初期サイズ */
+  }
+  
+  /* アクティブ状態の親要素 */
+  .bangai2.active {
+    transform: scale(1.2); /* 拡大 */
+  }
+  
+  /* 初期状態のタイトル */
+  .bangai2 header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    margin: 0;
+    opacity: 0.5; /* 初期は少し透明 */
+    transform: scale(1); /* 初期サイズ */
+    transition: all 0.3s ease; /* スムーズな変化 */
+  }
+  
+  /* アクティブ状態のタイトル */
+  .bangai2.active header h1 {
+    opacity: 1; /* 完全に表示 */
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3),   /* 外側の薄い影 */
+    -2px -2px 3px rgba(255, 255, 255, 0.5), /* 内側の明るい影 */
+    4px 4px 8px rgba(0, 0, 0, 0.2);  /* 奥行きの強い影 */
+    color: #7e5160; /* 色を変更 */
+    font-weight:900; 
+    transform: scale(1.2); /* 少し拡大 */
+  }
+  .bangai3 {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: visible; /* 子要素のはみ出しを許可 */
+    transition: all 0.3s ease; /* スムーズな変化 */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+  }
+  
+  /* 初期状態の親要素 */
+  .bangai3 {
+    transform: scale(1); /* 初期サイズ */
+  }
+  
+  /* アクティブ状態の親要素 */
+  .bangai3.active {
+    transform: scale(1.2); /* 拡大 */
+  }
+  
+  /* 初期状態のタイトル */
+  .bangai3 header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2px;
+    margin: 0;
+    opacity: 0.5; /* 初期は少し透明 */
+    transform: scale(1); /* 初期サイズ */
+    transition: all 0.3s ease; /* スムーズな変化 */
+  }
+  
+  /* アクティブ状態のタイトル */
+  .bangai3.active header h1 {
+    opacity: 1; /* 完全に表示 */
+    text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.3),   /* 外側の薄い影 */
+    -2px -2px 3px rgba(255, 255, 255, 0.5), /* 内側の明るい影 */
+    4px 4px 8px rgba(0, 0, 0, 0.2);  /* 奥行きの強い影 */
+    color: #7e5160; /* 色を変更 */
+    font-weight:900; 
+    transform: scale(1.2); /* 少し拡大 */
+  }
 
+  .bangai4 {
+    position: relative;
+    text-align: center;
+   
 }
 
+.bangai4 h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #44ccbaf6;
+    letter-spacing: 5px;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.8s ease-out;
+    opacity: 0; /* 初期状態は透明 */
+    transform: translateY(50px) scale(0.9) rotate(-10deg); /* 初期状態: 傾けて下に配置 */
+}
+
+.bangai4 h2.animate {
+    opacity: 1; /* 完全に表示 */
+    transform: translateY(0) scale(1) rotate(0); /* 元の位置・サイズに戻る */
+    text-shadow: 0 5px 15px rgb(255, 254, 254); /* 文字にふわっとした影を追加 */
+}
   
-  
+.bangai5 {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* 子要素のはみ出しを隠す */
+    margin-top: 100px; /* ページのデザインに合わせて調整 */
+    white-space: nowrap; 
+}
+
+.bangai5 h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #44ccbaf6;
+    letter-spacing: 5px;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
+                opacity 0.8s ease-out;
+    opacity: 0; /* 初期状態は透明 */
+    transform: translateY(50px) scale(0.9) rotate(-10deg); /* 初期状態: 傾けて下に配置 */
+}
+
+.bangai5 h2.animate {
+    opacity: 1; /* 完全に表示 */
+    transform: translateY(0) scale(1) rotate(0); /* 元の位置・サイズに戻る */
+    text-shadow: 0 5px 15px rgb(255, 254, 254); /* 文字にふわっとした影を追加 */
+}
 
 
 
