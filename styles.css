@@ -38,18 +38,16 @@ header img {
     margin-top: 8rem;
     margin-bottom: 8rem; 
 }
-.syoukai{
-    display: flex; /* 横並びにする */
-    justify-content: center; /* 水平方向に中央揃え */
-    gap: 20px; /* 画像間の隙間を調整 */
-    flex-wrap: wrap; /* 画面サイズが小さくなったら画像を折り返す */
-}
+
 .syoukai img {
     margin: 30px;
-    max-width: 170%; /* 画像の幅を親要素に合わせる */
+    max-width: 100%; /* 画像の幅を親要素に合わせる */
     height: auto; /* 縦横比を維持 */ 
-    margin-bottom: 20rem;
+
+    margin-bottom: 10rem;
   }
+
+
 /* チャットコンテナ */
 .chat-container {
     width: 100%;
@@ -85,6 +83,7 @@ header img {
     overflow-y: auto;
     margin-bottom: 5rem;
   }
+  
   
   /* メッセージ共通スタイル */
   .chat-message {
@@ -685,6 +684,43 @@ header img {
     width: 96%;
     }
     }
+/* 目次のスタイル */
+.toc {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+}
+
+.toc h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc ul li {
+    margin: 10px 0;
+}
+
+.toc ul li a {
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 1.1em;
+}
+
+.toc ul li a:hover {
+    color: #005fa3;
+}
+
+
 
 /* メディアクエリ（スマホ対応） */
 @media screen and (max-width: 480px) {
@@ -694,9 +730,11 @@ header img {
     header img {
         width: 100%;
     }
-    .syoukai {
+    .syoukai img {
         flex-direction: column; /* 縦並びに変更 */
         align-items: center; /* 中央揃え */
+        width: 80%; /* 画面幅に応じて画像サイズを調整 */
+        max-width: 300px; /* 必要に応じて最大幅を設定 */
     }
     .chat-container {
         margin: 10px;
