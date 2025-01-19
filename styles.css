@@ -723,7 +723,7 @@ header img {
 
 
 /* メディアクエリ（スマホ対応） */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 786px) {
     .waku {
         width: 100%;
     }
@@ -747,4 +747,13 @@ header img {
         max-width: 100px; /* スマホでは最大幅を300pxに縮小 */
         height: auto; /* 縦横比を維持 */
       }
+      .bangai header h1 {
+        font-size: 0.5em;
+       }
+       .bangai2 header h1 {
+        font-size: 0.5em;
+       }
+       .bangai3 header h1 {
+        font-size: 0.5em;
+       }
     }
