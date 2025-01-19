@@ -74,6 +74,17 @@ header img {
     margin-top: 2rem;
     margin-bottom: 2rem; 
   }
+  .chat-container3 {
+    width: 100%;
+    max-width: 600px; /* 最大幅 */
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    margin-bottom: 5rem;
+  }
   
   /* メッセージ共通スタイル */
   .chat-message {
@@ -95,6 +106,117 @@ header img {
     text-align: left;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+  .chat-message.left .message-bubble1 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble2 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble3 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble4 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble5 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble6 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble7 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble8 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble9 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble10 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble11 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-message.left .message-bubble12 {
+    background-color: #6482ad; /* 左側の背景色 */
+    color: white;
+    border-radius: 15px 15px 15px 0; /* 角丸調整 */
+    padding: 10px 15px;
+    max-width: 70%;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  
   
   /* 右側（自分） */
   .chat-message.right {
@@ -120,6 +242,168 @@ header img {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
+  @keyframes fadeInHighlight {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* 初期状態 */
+.message-bubble1 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble1.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 初期状態 */
+.message-bubble2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble2.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble3 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble3.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble4 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble4.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble5 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble5.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble6 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble6.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble7 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble7.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble8 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble8.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble9 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble9.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble10 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble10.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble11 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble11.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+.message-bubble12 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* スクロール時のアクティブな状態 */
+.message-bubble12.animate {
+    animation: fadeInHighlight 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* .1soccer クラス全体のスタイル */
 .soccer {
     text-align: center; /* タイトルを中央揃え */
@@ -181,7 +465,7 @@ header img {
     opacity: 0.5; /* 初期は少し透明 */
     transform: scale(1); /* 初期サイズ */
     transition: all 0.3s ease; /* スムーズな変化 */
-  }
+   }
   
   /* アクティブ状態のタイトル */
   .bangai.active header h1 {
@@ -283,55 +567,124 @@ header img {
     transform: scale(1.2); /* 少し拡大 */
   }
 
-  .bangai4 {
+  
+
+.bangai4 {
     position: relative;
     text-align: center;
-   
+    overflow: hidden; /* 子要素のはみ出しを隠す */
+    margin-top: 100px; /* ページのデザインに合わせて調整 */
 }
 
 .bangai4 h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #44ccbaf6;
+    color: #ff66b2;
     letter-spacing: 5px;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.8s ease-out;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
     opacity: 0; /* 初期状態は透明 */
-    transform: translateY(50px) scale(0.9) rotate(-10deg); /* 初期状態: 傾けて下に配置 */
+    transform: translateY(50px) scale(0.9) rotate(0deg); /* 初期位置＋小さく＆傾きなし */
 }
 
 .bangai4 h2.animate {
-    opacity: 1; /* 完全に表示 */
-    transform: translateY(0) scale(1) rotate(0); /* 元の位置・サイズに戻る */
-    text-shadow: 0 5px 15px rgb(255, 254, 254); /* 文字にふわっとした影を追加 */
+    opacity: 1; /* 表示 */
+    transform: translateY(0) scale(1) rotate(-5deg); /* 少し傾ける */
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 文字にふわっとした影を追加 */
+    animation: wiggle 0.4s ease-out 0.2s; /* 傾きの微振動アニメーション */
 }
+
+/* 傾きのかわいい動き */
+@keyframes wiggle {
+    0% { transform: translateY(0) scale(1) rotate(-5deg); }
+    50% { transform: translateY(-5px) scale(1) rotate(5deg); }
+    100% { transform: translateY(0) scale(1) rotate(0deg); }
+}   
   
 .bangai5 {
     position: relative;
     text-align: center;
     overflow: hidden; /* 子要素のはみ出しを隠す */
     margin-top: 100px; /* ページのデザインに合わせて調整 */
-    white-space: nowrap; 
 }
 
 .bangai5 h2 {
     font-size: 2.5em;
     font-weight: bold;
-    color: #44ccbaf6;
+    color: #ff66b2;
     letter-spacing: 5px;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), 
-                opacity 0.8s ease-out;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
     opacity: 0; /* 初期状態は透明 */
-    transform: translateY(50px) scale(0.9) rotate(-10deg); /* 初期状態: 傾けて下に配置 */
+    transform: translateY(50px) scale(0.9) rotate(0deg); /* 初期位置＋小さく＆傾きなし */
 }
 
 .bangai5 h2.animate {
-    opacity: 1; /* 完全に表示 */
-    transform: translateY(0) scale(1) rotate(0); /* 元の位置・サイズに戻る */
-    text-shadow: 0 5px 15px rgb(255, 254, 254); /* 文字にふわっとした影を追加 */
+    opacity: 1; /* 表示 */
+    transform: translateY(0) scale(1) rotate(-5deg); /* 少し傾ける */
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 文字にふわっとした影を追加 */
+    animation: wiggle 0.4s ease-out 0.2s; /* 傾きの微振動アニメーション */
 }
 
+/* 傾きのかわいい動き */
+@keyframes wiggle {
+    0% { transform: translateY(0) scale(1) rotate(-5deg); }
+    50% { transform: translateY(-5px) scale(1) rotate(5deg); }
+    100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+.bangai6 {
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* 子要素のはみ出しを隠す */
+    margin-top: 100px; /* ページのデザインに合わせて調整 */
+}
 
+.bangai6 h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ff66b2;
+    letter-spacing: 5px;
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    opacity: 0; /* 初期状態は透明 */
+    transform: translateY(50px) scale(0.9) rotate(0deg); /* 初期位置＋小さく＆傾きなし */
+}
+
+.bangai6 h2.animate {
+    opacity: 1; /* 表示 */
+    transform: translateY(0) scale(1) rotate(-5deg); /* 少し傾ける */
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* 文字にふわっとした影を追加 */
+    animation: wiggle 0.4s ease-out 0.2s; /* 傾きの微振動アニメーション */
+}
+
+/* 傾きのかわいい動き */
+@keyframes wiggle {
+    0% { transform: translateY(0) scale(1) rotate(-5deg); }
+    50% { transform: translateY(-5px) scale(1) rotate(5deg); }
+    100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+.dummy-container {
+    height: 100vh;
+    }
+    .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .static-image,
+    .animated-gif {
+    width: 60%;
+    
+    height: auto;
+    position: absolute;
+    }
+    .animated-gif {
+    opacity: 0;
+    }
+    @media screen and (max-width: 480px) {
+    .static-image,
+    .animated-gif {
+    width: 96%;
+    }
+    }
 
 /* メディアクエリ（スマホ対応） */
 @media screen and (max-width: 480px) {
@@ -349,8 +702,7 @@ header img {
         margin: 10px;
         padding: 10px;
       }
-    
- .chat-message .message-bubble {
+     .chat-message .message-bubble {
         font-size: 14px;
       }
       .gif-box img {
